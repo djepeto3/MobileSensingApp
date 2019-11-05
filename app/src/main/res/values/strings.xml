@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">MobileSensingApp</string>
+    <string name="app_name">Flu tracking</string>
+    <string name="login">Login</string>
+    <string name="signUp">You do not have account? Register here.</string>
+    <string name="enter_email">E-mail address</string>
+    <string name="enter_password">Password</string>
+    <string name="logIn">Already have an account? Log in here</string>
+    <string name="register">Register</string>
+    <string name="welcomeText">Welcome to Flu tracking application. This application helps you and other users of it to avoid flues and sickness. Your task is to report every coughing or similar flu sympthoms such as sneezing and stuff. Thanks in advance and enjoy our up!</string>
+    <string name="toReportBtn">Report</string>
+    <string name="toYourReportBtn">Your condition report</string>
 </resources>
