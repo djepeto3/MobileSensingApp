@@ -7,17 +7,24 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView userTV;
     private Button reportBtn;
     private Button yourReportBtn;
     private Button infoBtn;
+    private FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        firebaseAuth=FirebaseAuth.getInstance();
+        FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
         userTV=findViewById(R.id.userTV);
+        userTV.setText(firebaseUser.getEmail());
         reportBtn=findViewById(R.id.toReportBtn);
         yourReportBtn=findViewById(R.id.toYourReportBtn);
 

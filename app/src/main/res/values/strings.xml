@@ -9,4 +9,8 @@
     <string name="welcomeText">Welcome to Flu tracking application. This application helps you and other users of it to avoid flues and sickness. Your task is to report every coughing or similar flu sympthoms such as sneezing and stuff. Thanks in advance and enjoy our up!</string>
     <string name="toReportBtn">Report</string>
     <string name="toYourReportBtn">Your condition report</string>
+    <string name="not_registrated">Registration failed. Please try again</string>
+    <string name="enter_email_please">Please enter your e-mail address</string>
+    <string name="enter_password_please">Please enter password</string>
+    <string name="wrong">Log in failed. Wrong e-mail or password</string>
 </resources>
