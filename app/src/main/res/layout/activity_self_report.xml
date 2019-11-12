@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selfReportExplain"
+            android:textAlignment="center"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/runnyNose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/runnyNose"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/coughing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coughing"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/sneezing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sneezing"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/headache" />
+        <CheckBox
+            android:id="@+id/fatigue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fatigue"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/musclePain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/musclePain"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/chestPain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chestPain"
+            android:onClick="onCheckboxClicked"/>
+        <CheckBox
+            android:id="@+id/feelGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feelGood"
+            android:checked="true"
+            android:clickable="false"/>
+        <Button
+            android:id="@+id/confirmSelfReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmSelfReport"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>

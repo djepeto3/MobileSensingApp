@@ -2,6 +2,7 @@ package com.example.mobilesensingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,8 +37,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v==reportBtn){
+            Intent reportIntent = new Intent(this, ReportActivity.class);
+            startActivity(reportIntent);
 
         }else if(v==yourReportBtn){
+            Intent yourReportIntent = new Intent(this, SelfReportActivity.class);
+            startActivity(yourReportIntent);
 
         }else if(v==infoBtn){
 

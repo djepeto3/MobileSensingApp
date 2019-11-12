@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#009688"
+        android:background="#5CF7F8F8"
         android:text="@string/welcomeText"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"

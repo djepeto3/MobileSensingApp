@@ -6,11 +6,23 @@
     <string name="enter_password">Password</string>
     <string name="logIn">Already have an account? Log in here</string>
     <string name="register">Register</string>
-    <string name="welcomeText">Welcome to Flu tracking application. This application helps you and other users of it to avoid flues and sickness. Your task is to report every coughing or similar flu sympthoms such as sneezing and stuff. Thanks in advance and enjoy our up!</string>
-    <string name="toReportBtn">Report</string>
-    <string name="toYourReportBtn">Your condition report</string>
+    <string name="welcomeText">Welcome to Flu tracking application. This application helps you and other users to report flu. Help the community by reporting the symptoms around you, and do a daily report of your own state. Thanks you and enjoy the app!</string>
+    <string name="toReportBtn">Report flu</string>
+    <string name="toYourReportBtn">Daily report</string>
     <string name="not_registrated">Registration failed. Please try again</string>
     <string name="enter_email_please">Please enter your e-mail address</string>
     <string name="enter_password_please">Please enter password</string>
     <string name="wrong">Log in failed. Wrong e-mail or password</string>
+    <string name="selfReportExplain">Check your symptoms</string>
+    <string name="coughing">Coughing </string>
+    <string name="sneezing">Sneezing </string>
+    <string name="headache">Headache </string>
+    <string name="runnyNose">Runny nose </string>
+    <string name="fatigue">Fatigue </string>
+    <string name="musclePain">Muscle pain </string>
+    <string name="chestPain">Chest pain </string>
+    <string name="confirmSelfReport">Confirm</string>
+    <string name="reportExplain">Check symptoms you see on other people</string>
+    <string name="numberOfPeople">Number of people</string>
+    <string name="feelGood">I feel good! </string>
 </resources>
