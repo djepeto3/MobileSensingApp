@@ -1,6 +1,9 @@
 package com.example.mobilesensingapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.ExistingPeriodicWorkPolicy;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +11,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.aware.Aware;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +28,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Aware.startAWARE(this);
+        WorkManager mWorkManager =
+                WorkManager.getInstance(ApplicationContext.getContext());
+        PeriodicWorkRequest.Builder myWorkBuilder =
+                new PeriodicWorkRequest.Builder(SensingWorker.class, 15, TimeUnit.MINUTES);
+        PeriodicWorkRequest myWork = myWorkBuilder.build();
+        mWorkManager.enqueueUniquePeriodicWork("sensingJob",
+                ExistingPeriodicWorkPolicy.KEEP, myWork);
+
         firebaseAuth=FirebaseAuth.getInstance();
         FirebaseUser firebaseUser=firebaseAuth.getCurrentUser();
         userTV=findViewById(R.id.userTV);
